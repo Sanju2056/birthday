@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { p11, p14, p16, p23, p24, p26, p8 } from "../../assets/images";
+import { p11, p14, p16, p23, p24, p26, m1 } from "../../assets/images";
 
 const photo = [
   { img: p24, caption: "Our first photo together ❤️" },
@@ -62,12 +62,20 @@ const Photo = () => {
               <h1 className="text-3xl underline font-bold font-cursive">
                 A short glimpse of us !
               </h1>
+              <video
+                src={m1}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="rounded-lg object-cover w-full"
+              ></video>
 
-              <img
+              {/* <img
                 src={p8}
                 className="rounded-lg object-cover w-full"
                 alt="Left Main"
-              />
+              /> */}
             </div>
 
             {/* RIGHT SIDE GRID */}
@@ -78,11 +86,11 @@ const Photo = () => {
                   className="flex flex-col items-center text-center"
                 >
                   {/* <div className="border-2 border-[#D7A1A1] rounded-full flex items-center justify-center "> */}
-                    <img
-                      src={item.img}
-                      className="w-36 h-36 sm:w-40 sm:h-40 border-4 border-[#D7A1A1] rounded-full object-cover mb-2"
-                      alt="circle"
-                    />
+                  <img
+                    src={item.img}
+                    className="w-36 h-36 sm:w-40 sm:h-40 border-4 border-[#D7A1A1] rounded-full object-cover mb-2"
+                    alt="circle"
+                  />
                   {/* </div> */}
                   <p className="text-sm font-sans">"{item.caption}"</p>
                 </div>

@@ -12,6 +12,6 @@ import p23 from "./23.jpeg"
 import p24 from "./24.jpeg"
 import p25 from "./25.jpeg"
 import p26 from "./26.jpeg"
+import m1 from "./1.mp4"
 
-
-export { Teddy ,Doggie,Cry,p8,p16,p15,p14,p7,p11,p22,p23,p24,p25,p26};
+export { Teddy ,Doggie,Cry,p8,p16,p15,p14,p7,p11,p22,p23,p24,p25,p26,m1};
