@@ -8,6 +8,7 @@ import No from "./pages/Contact/Contact.tsx";
 import Yes from "./pages/BlogDetail/BlogDetail.tsx";
 import Photo from "./pages/Write/Write.tsx";
 import Message from "./pages/Message/Message.tsx";
+import Music from "./pages/Music/Music.tsx";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
       { path: "no", element: <No /> },
       { path: "yes", element: <Yes /> },
       { path: "message", element: <Message /> },
+      { path: "music", element: <Music /> },
     ],
   },
 ]);

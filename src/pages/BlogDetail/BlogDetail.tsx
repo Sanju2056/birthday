@@ -66,9 +66,12 @@ const Yes = () => {
           {/* Envelope Icon */}
 
           {/* Gift Icon */}
-          <div className="flex justify-center items-center border-4 border-[#D7A1A1] p-2 md:p-6 rounded-xl">
-            <FaGift className="text-[#D7A1A1] text-5xl md:text-[150px]" />
-          </div>
+          <Link to={"/music"}>
+            <div className="flex justify-center items-center border-4 border-[#D7A1A1] p-2 md:p-6 rounded-xl">
+              <FaGift className="text-[#D7A1A1] text-5xl md:text-[150px]" />
+            </div>
+          </Link>
+         
         </div>
 
         {/* Bottom Text */}

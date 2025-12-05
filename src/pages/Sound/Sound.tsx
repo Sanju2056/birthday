@@ -1,0 +1,42 @@
+import { useRef, useState } from "react";
+import { SpeakerWaveIcon, SpeakerXMarkIcon } from "@heroicons/react/24/solid";
+import { Happy } from "../../assets/music";
+
+const Sound = () => {
+  // Tell TypeScript this ref is for an HTMLAudioElement
+  const audioRef = useRef<HTMLAudioElement>(null);
+  const [isPlaying, setIsPlaying] = useState(true);
+
+  const toggleMusic = () => {
+    if (!audioRef.current) return;
+
+    if (isPlaying) {
+      audioRef.current.pause();
+    } else {
+      audioRef.current.play();
+    }
+
+    setIsPlaying(!isPlaying);
+  };
+
+  return (
+    <div className="flex items-center w-full justify-end">
+      {/* Music element */}
+      <audio ref={audioRef} src={Happy} autoPlay loop />
+
+      {/* Circular button */}
+      <button
+        onClick={toggleMusic}
+        className=" text-white rounded-full flex items-center justify-center transition-transform transform hover:scale-110"
+      >
+        {isPlaying ? (
+          <SpeakerWaveIcon className="w-8 h-8" />
+        ) : (
+          <SpeakerXMarkIcon className="w-8 h-8" />
+        )}
+      </button>
+    </div>
+  );
+};
+
+export default Sound;

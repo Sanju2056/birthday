@@ -1,9 +1,10 @@
 
 import { Outlet } from "react-router-dom";
+import Sound from "../pages/Sound/Sound";
 
 export default function Layout() {
   return (
-    <div className="h-full flex justify-center items-center">
+    <div className="h-full flex flex-col justify-center  items-center">
        <div className="pointer-events-none absolute inset-0 overflow-hidden">
         {[...Array(45)].map((_, i) => (
           <div
@@ -41,6 +42,7 @@ export default function Layout() {
         ))}
       </div>
       {/* <NavBar /> */}
+      <Sound/>
       <Outlet />
       {/* <Footer/> */}
     </div>
