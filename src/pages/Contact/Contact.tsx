@@ -49,7 +49,7 @@ const No = () => {
           className="mx-auto mb-4 w-52 h-48 bg-black-solid"
         />
 
-        <p className="text-lg mb-5 font-sans">You sure baby,but im sure will sure you'll love it 🥹 </p>
+        <p className="text-lg mb-5 font-sans">You sure baby,but im sure you'll love it 🥹 </p>
 
         <div className="flex gap-5 justify-center">
           <Link to={"/"}>
